@@ -1,0 +1,24 @@
+#Camera topic here
+#camera_topic: "/darknet_ros/detection_image_comp_optical"
+camera_topic : "/yolov7/image_raw"
+queue_size: 1
+
+# Set your detection topic here
+detection_topic: "/yolov7/detections"
+
+# Set your output topic here
+tracker_topic: "/ctpoint_track"
+
+# Threshold for Costs between detections and tracks
+cost_threhold: 15
+
+# min_hits
+min_hits: 1
+
+# max age
+max_age: 5
+
+image_view:
+  enable_opencv: true
+  wait_key_delay: 1
+  enable_console_output: true
